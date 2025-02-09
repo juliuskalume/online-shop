@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorites - Mobile Phone Store</title>
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="src/styles/responsive.css">
+    <link rel="stylesheet" href="src/styles/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header will be dynamically inserted by JavaScript -->
+    <div id="header-placeholder"></div>
+
+    <main class="favorites-page">
+        <div class="favorites-header">
+            <h1>My Favorites</h1>
+            <p class="last-updated">Last updated: <span id="last-login">2025-02-09 21:47:25</span></p>
+        </div>
+
+        <div class="favorites-container">
+            <div class="products-grid" id="favorites-grid">
+                <!-- Favorites will be dynamically inserted here -->
+            </div>
+
+            <div class="empty-favorites hidden" id="empty-favorites">
+                <i class="far fa-heart"></i>
+                <h2>No favorites yet</h2>
+                <p>Start adding products to your favorites list!</p>
+                <a href="index.html" class="browse-products-btn">Browse Products</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer will be dynamically inserted by JavaScript -->
+    <div id="footer-placeholder"></div>
+
+    <script src="src/js/auth.js"></script>
+    <script src="src/js/main.js"></script>
+    <script src="src/js/favorites.js"></script>
+</body>
+</html>

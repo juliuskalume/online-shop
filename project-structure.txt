@@ -1,0 +1,28 @@
+📁 mobile-store/
+├── 📁 public/
+│   ├── 📁 images/
+│   │   └── 📁 products/
+│   └── 📁 icons/
+├── 📁 src/
+│   ├── 📁 components/
+│   │   ├── 📁 auth/
+│   │   ├── 📁 cart/
+│   │   ├── 📁 products/
+│   │   └── 📁 shared/
+│   ├── 📁 pages/
+│   ├── 📁 styles/
+│   │   ├── main.css
+│   │   ├── responsive.css
+│   │   ├── products.css
+│   │   └── cart.css
+│   ├── 📁 utils/
+│   └── 📁 js/
+│       ├── main.js
+│       ├── auth.js
+│       ├── favourites.js
+│       └── cart.js
+├── 📄 index.html
+├── 📄 cart.html
+├── 📄 favourites.html
+├── 📄 package.json
+└── 📄 README.md

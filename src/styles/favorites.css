@@ -1,0 +1,75 @@
+.favorites-page {
+  max-width: 1200px;
+  margin: 80px auto 2rem;
+  padding: 0 1rem;
+}
+
+.favorites-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.last-updated {
+  color: var(--gray);
+  font-size: 0.9rem;
+}
+
+.empty-favorites {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.empty-favorites i {
+  font-size: 4rem;
+  color: var(--gray);
+  margin-bottom: 1rem;
+}
+
+.empty-favorites h2 {
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.empty-favorites p {
+  color: var(--gray);
+  margin-bottom: 2rem;
+}
+
+.browse-products-btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: var(--transition);
+}
+
+.browse-products-btn:hover {
+  background-color: #1976d2;
+}
+
+.remove-favorite-btn {
+  background-color: #ff4444;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: var(--transition);
+}
+
+.remove-favorite-btn:hover {
+  background-color: #cc0000;
+}
+
+.hidden {
+  display: none;
+}

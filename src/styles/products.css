@@ -1,0 +1,240 @@
+/* Product Card Styles */
+.product-card {
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.product-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.product-card .price {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.product-card .description {
+  font-size: 0.9rem;
+  color: var(--gray);
+  margin-bottom: 1rem;
+}
+
+.product-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.add-to-cart-btn,
+.favorite-btn,
+.whatsapp-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: 0.9rem;
+}
+
+.add-to-cart-btn {
+  background-color: var(--primary-color);
+  color: var(--white);
+  flex: 2;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #1976d2;
+}
+
+.favorite-btn {
+  background-color: var(--light-gray);
+  color: #ff4444;
+  flex: 1;
+}
+
+.favorite-btn:hover {
+  background-color: #ff4444;
+  color: var(--white);
+}
+
+.whatsapp-btn {
+  background-color: #25d366;
+  color: var(--white);
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.whatsapp-btn:hover {
+  background-color: #128c7e;
+}
+
+/* Cart and Favorites Counter */
+.fa-shopping-cart,
+.fa-heart {
+  position: relative;
+}
+
+.fa-shopping-cart[data-count]:after,
+.fa-heart[data-count]:after {
+  content: attr(data-count);
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  font-size: 0.7rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 50%;
+  min-width: 1rem;
+  text-align: center;
+}
+
+/* Responsive Product Grid */
+@media screen and (max-width: 768px) {
+  .product-card {
+    max-width: 100%;
+  }
+
+  .product-actions {
+    flex-direction: column;
+  }
+
+  .add-to-cart-btn,
+  .favorite-btn,
+  .whatsapp-btn {
+    width: 100%;
+  }
+}
+
+/* Add to src/styles/products.css */
+.products-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.products-filters {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-container input {
+  padding: 0.5rem 2rem 0.5rem 1rem;
+  border: 1px solid var(--light-gray);
+  border-radius: 5px;
+  width: 200px;
+}
+
+.search-container i {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--gray);
+}
+
+#sort-products {
+  padding: 0.5rem;
+  border: 1px solid var(--light-gray);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product-badges {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.badge.new {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.badge.featured {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+.product-specs {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  color: var(--gray);
+}
+
+.product-specs span {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+/* Add this to your existing products.css */
+.product-card img {
+  transition: opacity 0.3s ease;
+}
+
+.product-card img[src*="placeholder.jpg"] {
+  opacity: 0.5;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .products-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .products-filters {
+    flex-direction: column;
+  }
+
+  .search-container input {
+    width: 100%;
+  }
+
+  #sort-products {
+    width: 100%;
+  }
+}
